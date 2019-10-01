@@ -2,18 +2,6 @@
 #include<stdlib.h>
 #include"双向链表.h"
 
-//双向链表结构体
-//定义结构体类型Node，和结构体指针类型LinkList
-typedef struct Node{
-	int data;//数据域
-	struct Node * piror;//指向前节点指针
-	struct Node * next;//指向后节点指针
-}Node, * LinkList;
-
-/*
-* 同样的在双向链表中，也使用一个空余的节点作为头结点
-* 在初始化时定义
-*/
 //双向链表初始化，传入的是头指针l的地址
 void initList(LinkList * l)
 {
